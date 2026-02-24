@@ -2,10 +2,10 @@
 
 ---
 
-# 📊 Financial Data Quality Framework
+## 📊 Financial Data Quality Framework
 
-An automated data quality pipeline for validating **company financial revenue data** extracted from multiple sources.
-This project combines **rule-based validation and LLM-powered anomaly detection** to identify errors, inconsistencies, and plausibility risks before data ingestion.
+An automated data quality pipeline for validating company financial revenue data extracted from multiple sources.
+This project combines rule-based validation and LLM-powered anomaly detection to identify errors, inconsistencies, and plausibility risks before data ingestion.
 
 ---
 
@@ -19,9 +19,7 @@ Financial datasets from APIs, scrapers, or multiple providers often contain:
 * Duplicate or inconsistent records
 * Contextual anomalies that rules alone cannot detect
 
-This framework provides a **scalable, automated solution** to detect such issues and support reliable downstream analytics.
-
-The system runs **5 dimensions of quality checks**, flags problematic records, and generates structured outputs for decision-making.
+The system runs 5 dimensions of quality checks, flags problematic records, and generates structured outputs for decision-making.
 
 ---
 
@@ -85,7 +83,6 @@ Each dimension produces structured issues with:
 ### 1. Completeness
 
 Detects:
-
 * Missing company names
 * Missing revenue for active public companies
 * Dataset-level null thresholds
@@ -93,7 +90,6 @@ Detects:
 ### 2. Validity
 
 Validates:
-
 * Schema and required columns
 * Revenue sanity limits
 * Fiscal period formatting
@@ -101,7 +97,6 @@ Validates:
 ### 3. Consistency
 
 Identifies:
-
 * Extreme year-over-year changes
 * Zero revenue in active companies
 * Time-series gaps
@@ -110,7 +105,6 @@ Identifies:
 ### 4. Uniqueness
 
 Checks:
-
 * Duplicate primary keys
 * Exact duplicate rows
 * Multiple IDs mapped to the same company
@@ -118,7 +112,6 @@ Checks:
 ### 5. Plausibility (LLM-based)
 
 Uses a language model to:
-
 * Evaluate suspicious patterns
 * Distinguish real business events from data errors
 * Provide structured verdicts
@@ -134,17 +127,6 @@ Uses a language model to:
 
 ---
 
-## 📊 Example Use Cases
-
-* Financial data platforms
-* Market intelligence
-* Data ingestion pipelines
-* Due diligence workflows
-* Analytics and reporting
-* Benchmarking and research
-
----
-
 ## 🖥️ Streamlit App
 
 The project includes an interactive UI where users can:
@@ -157,7 +139,6 @@ The project includes an interactive UI where users can:
 * Download structured outputs
 
 ---
-
 ## 📥 Installation
 
 ### 1. Clone the repository
@@ -239,10 +220,3 @@ The framework generates:
 These outputs support both automated pipelines and manual review.
 
 ---
-
-## 📌 Key Insights
-
-* Multi-source financial data introduces significant quality risk
-* Completeness and consistency dominate structural issues
-* LLM reasoning adds a complementary validation layer
-* Automated validation is essential for scalable data ingestion
