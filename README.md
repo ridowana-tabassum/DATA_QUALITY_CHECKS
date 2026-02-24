@@ -1,3 +1,7 @@
+🔗 **Live App:** https://dataqualitychecks-ybliu97awfwtbfzswamacj.streamlit.app/
+
+---
+
 # 📊 Financial Data Quality Framework
 
 An automated data quality pipeline for validating **company financial revenue data** extracted from multiple sources.
