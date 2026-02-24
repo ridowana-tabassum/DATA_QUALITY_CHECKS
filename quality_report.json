@@ -1,0 +1,963 @@
+{
+  "run_timestamp": "2026-02-24T21:22:37.295493",
+  "dataset_shape": {
+    "rows": 372,
+    "columns": 10
+  },
+  "total_issues": 70,
+  "hard_reject_count": 5,
+  "soft_flag_count": 65,
+  "ingestion_decision": "BLOCKED",
+  "issues": [
+    {
+      "severity": "HARD_REJECT",
+      "dimension": "Completeness",
+      "check": "null_companynameofficial",
+      "detail": "2 row(s) have no companynameofficial",
+      "affected_rows": [
+        140,
+        141
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Completeness",
+      "check": "high_revenue_null_pct",
+      "detail": "REVENUE null rate = 24.5% (threshold 5%)",
+      "affected_rows": []
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Completeness",
+      "check": "active_missing_revenue",
+      "detail": "91 ACTIVE row(s) missing REVENUE",
+      "affected_rows": [
+        11,
+        12,
+        16,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        32,
+        46,
+        47,
+        49,
+        54,
+        56,
+        58,
+        59,
+        62,
+        71,
+        73,
+        75,
+        76,
+        78,
+        89,
+        90,
+        91,
+        92,
+        98,
+        99,
+        100,
+        101,
+        102,
+        107,
+        108,
+        112,
+        117,
+        119,
+        123,
+        124,
+        125,
+        129,
+        131,
+        133,
+        134,
+        135,
+        137,
+        138,
+        140,
+        142,
+        147,
+        149,
+        150,
+        153,
+        154,
+        155,
+        157,
+        158,
+        160,
+        161,
+        162,
+        163,
+        164,
+        168,
+        169,
+        176,
+        180,
+        182,
+        184,
+        186,
+        190,
+        193,
+        194,
+        195,
+        196,
+        197,
+        201,
+        211,
+        213,
+        216,
+        220,
+        222,
+        223,
+        247,
+        248,
+        292,
+        365,
+        366
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Completeness",
+      "check": "public_missing_revenue",
+      "detail": "91 PUBLIC row(s) missing REVENUE",
+      "affected_rows": [
+        11,
+        12,
+        16,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        32,
+        46,
+        47,
+        49,
+        54,
+        56,
+        58,
+        59,
+        62,
+        71,
+        73,
+        75,
+        76,
+        78,
+        89,
+        90,
+        91,
+        92,
+        98,
+        99,
+        100,
+        101,
+        102,
+        107,
+        108,
+        112,
+        117,
+        119,
+        123,
+        124,
+        125,
+        129,
+        131,
+        133,
+        134,
+        135,
+        137,
+        138,
+        140,
+        142,
+        147,
+        149,
+        150,
+        153,
+        154,
+        155,
+        157,
+        158,
+        160,
+        161,
+        162,
+        163,
+        164,
+        168,
+        169,
+        176,
+        180,
+        182,
+        184,
+        186,
+        190,
+        193,
+        194,
+        195,
+        196,
+        197,
+        201,
+        211,
+        213,
+        216,
+        220,
+        222,
+        223,
+        247,
+        248,
+        292,
+        365,
+        366
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Completeness",
+      "check": "revenue_without_unit",
+      "detail": "1 row(s) have REVENUE but no unit_REVENUE",
+      "affected_rows": [
+        156
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Completeness",
+      "check": "unit_without_revenue",
+      "detail": "14 row(s) have unit_REVENUE but no REVENUE",
+      "affected_rows": [
+        196,
+        197,
+        201,
+        211,
+        213,
+        216,
+        220,
+        222,
+        223,
+        247,
+        248,
+        292,
+        365,
+        366
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Validity",
+      "check": "negative_revenue",
+      "detail": "1 row(s) with REVENUE < 0",
+      "affected_rows": [
+        244
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "entity_geonameen_conflict",
+      "detail": "providerkey ABAN.NS has multiple geonameen values: ['Indonesia', 'India']",
+      "affected_rows": [
+        315,
+        316,
+        317,
+        318
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "ROBINSON PLC (pk=39811, United Kingdom): expected GBP, reports in ['EUR']",
+      "affected_rows": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "UNILEVER PLC (pk=41424, United Kingdom): expected GBP, reports in ['EUR']",
+      "affected_rows": [
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "COATS GROUP PLC (pk=103548, United Kingdom): expected GBP, reports in ['USD']",
+      "affected_rows": [
+        120,
+        121,
+        122
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "4IMPRINT GROUP PLC (pk=177991, United Kingdom): expected GBP, reports in ['USD']",
+      "affected_rows": [
+        196,
+        197,
+        198,
+        199
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "20 Microns Limited (pk=20MICRONS.NS, India): expected INR, reports in ['DKK']",
+      "affected_rows": [
+        239,
+        240,
+        241,
+        242
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "currency_country_mismatch",
+      "detail": "Aban Offshore Limited (pk=ABAN.NS, Indonesia): expected IDR, reports in ['INR']",
+      "affected_rows": [
+        315,
+        316,
+        317,
+        318
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=19457 (PZ CUSSONS PLC): 2022\u21922023 (1-yr gap) revenue changed +79% (threshold \u00b150%, 9.36e+09\u21921.68e+10)",
+      "affected_rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=25526 (THE HENDERSON SMALLER COMPANIES INVESTMENT TRUST PLC): 2022\u21922023 (1-yr gap) revenue changed +312% (threshold \u00b150%, 2.44e+08\u21921.00e+09)",
+      "affected_rows": [
+        13,
+        14
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=32762 (YOUNG & CO'S BREWERY PLC): 2020\u21922022 (2-yr gap) revenue changed +307% (threshold \u00b1100%, 9.06e+08\u21923.69e+09)",
+      "affected_rows": [
+        31,
+        33
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=65619 (JAMES LATHAM PUBLIC LIMITED COMPANY): 2020\u21922021 (1-yr gap) revenue changed +54% (threshold \u00b150%, 2.50e+09\u21923.85e+09)",
+      "affected_rows": [
+        81,
+        82
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=67863 (LEEDS GROUP PLC): 2021\u21922022 (1-yr gap) revenue changed -99% (threshold \u00b150%, 2.96e+08\u21922.78e+06)",
+      "affected_rows": [
+        87,
+        88
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=80774 (NEWBURY RACECOURSE PLC): 2019\u21922020 (1-yr gap) revenue changed -57% (threshold \u00b150%, 1.98e+08\u21928.49e+07)",
+      "affected_rows": [
+        95,
+        96
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=80774 (NEWBURY RACECOURSE PLC): 2020\u21922021 (1-yr gap) revenue changed +75% (threshold \u00b150%, 8.49e+07\u21921.48e+08)",
+      "affected_rows": [
+        96,
+        97
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=82548 (REACH PLC): 2022\u21922023 (1-yr gap) revenue changed -91% (threshold \u00b150%, 6.01e+10\u21925.69e+09)",
+      "affected_rows": [
+        103,
+        104
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=105664 (CAFFYNS PUBLIC LIMITED COMPANY): 2020\u21922021 (1-yr gap) revenue changed -81% (threshold \u00b150%, 1.65e+09\u21923.19e+08)",
+      "affected_rows": [
+        126,
+        127
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=105664 (CAFFYNS PUBLIC LIMITED COMPANY): 2021\u21922022 (1-yr gap) revenue changed +687% (threshold \u00b150%, 3.19e+08\u21922.51e+09)",
+      "affected_rows": [
+        127,
+        128
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=124855 (MPAC GROUP PLC): 2020\u21922023 (3-yr gap) revenue changed +884% (threshold \u00b1150%, 8.37e+08\u21928.24e+09)",
+      "affected_rows": [
+        156,
+        159
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "zero_revenue_active_public",
+      "detail": "providerkey=140269 (JAMES HALSTEAD PLC): REVENUE = 0 in year(s) [2019, 2022] for an ACTIVE PUBLIC company",
+      "affected_rows": [
+        170,
+        173
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=140269 (JAMES HALSTEAD PLC): 2021\u21922022 (1-yr gap) revenue changed -100% (threshold \u00b150%, 2.66e+09\u21920.00e+00)",
+      "affected_rows": [
+        172,
+        173
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=21STCENMGM.NS (Twentyfirst Century Management Services Limited): 2021\u21922022 (1-yr gap) revenue changed -236% (threshold \u00b150%, 9.97e+07\u2192-1.35e+08)",
+      "affected_rows": [
+        245,
+        244
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=21STCENMGM.NS (Twentyfirst Century Management Services Limited): 2022\u21922023 (1-yr gap) revenue changed +359% (threshold \u00b150%, -1.35e+08\u21923.50e+08)",
+      "affected_rows": [
+        244,
+        243
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=63MOONS.NS (63 moons technologies limited): 2021\u21922022 (1-yr gap) revenue changed +81% (threshold \u00b150%, 1.60e+09\u21922.90e+09)",
+      "affected_rows": [
+        261,
+        260
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=63MOONS.NS (63 moons technologies limited): 2022\u21922023 (1-yr gap) revenue changed +63% (threshold \u00b150%, 2.90e+09\u21924.72e+09)",
+      "affected_rows": [
+        260,
+        259
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AAATECH.NS (AAA Technologies Limited): 2021\u21922022 (1-yr gap) revenue changed +60% (threshold \u00b150%, 1.44e+08\u21922.30e+08)",
+      "affected_rows": [
+        269,
+        268
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARON.NS (Aaron Industries Limited): 2020\u21922021 (1-yr gap) revenue changed +52% (threshold \u00b150%, 2.48e+08\u21923.77e+08)",
+      "affected_rows": [
+        282,
+        281
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARTECH.NS (Aartech Solonics Limited): 2022\u21922023 (1-yr gap) revenue changed +51% (threshold \u00b150%, 2.17e+08\u21923.27e+08)",
+      "affected_rows": [
+        284,
+        283
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARTIPHARM.NS (Aarti Pharmalabs Limited): 2020\u21922021 (1-yr gap) revenue changed -77% (threshold \u00b150%, 5.19e+10\u21921.19e+10)",
+      "affected_rows": [
+        298,
+        297
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARTIPHARM.NS (Aarti Pharmalabs Limited): 2021\u21922022 (1-yr gap) revenue changed +62% (threshold \u00b150%, 1.19e+10\u21921.94e+10)",
+      "affected_rows": [
+        297,
+        296
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARVEEDEN.NS (Aarvee Denims and Exports Ltd.): 2020\u21922021 (1-yr gap) revenue changed +56% (threshold \u00b150%, 2.63e+09\u21924.10e+09)",
+      "affected_rows": [
+        306,
+        305
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARVEEDEN.NS (Aarvee Denims and Exports Ltd.): 2022\u21922023 (1-yr gap) revenue changed -67% (threshold \u00b150%, 2.59e+09\u21928.44e+08)",
+      "affected_rows": [
+        304,
+        303
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=AARVI.NS (Aarvi Encon Limited): 2021\u21922022 (1-yr gap) revenue changed +52% (threshold \u00b150%, 2.83e+09\u21924.30e+09)",
+      "affected_rows": [
+        309,
+        308
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ABB.NS (ABB India Limited): 2022\u21922023 (1-yr gap) revenue changed -95% (threshold \u00b150%, 8.50e+10\u21923.97e+09)",
+      "affected_rows": [
+        320,
+        319
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ABFRL.NS (Aditya Birla Fashion and Retail Limited): 2020\u21922021 (1-yr gap) revenue changed +55% (threshold \u00b150%, 5.21e+10\u21928.09e+10)",
+      "affected_rows": [
+        334,
+        333
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ABFRL.NS (Aditya Birla Fashion and Retail Limited): 2022\u21922023 (1-yr gap) revenue changed +55% (threshold \u00b150%, 5.21e+10\u21928.09e+10)",
+      "affected_rows": [
+        332,
+        331
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ACCURACY.NS (Accuracy Shipping Limited): 2020\u21922021 (1-yr gap) revenue changed +120% (threshold \u00b150%, 3.75e+09\u21928.24e+09)",
+      "affected_rows": [
+        350,
+        349
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ACI.NS (Archean Chemical Industries Limited): 2020\u21922021 (1-yr gap) revenue changed +53% (threshold \u00b150%, 7.39e+09\u21921.13e+10)",
+      "affected_rows": [
+        363,
+        362
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "revenue_yoy_spike",
+      "detail": "providerkey=ACL.NS (Andhra Cements Limited): 2020\u21922023 (3-yr gap) revenue changed +258498% (threshold \u00b1150%, 1.03e+06\u21922.66e+09)",
+      "affected_rows": [
+        367,
+        364
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "exact_revenue_repeat_non_adjacent",
+      "detail": "providerkey=19457 (PZ CUSSONS PLC): identical REVENUE 1.6800e+10 in years 2019 and 2023 (possible copy error)",
+      "affected_rows": [
+        0,
+        4
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "exact_revenue_repeat_non_adjacent",
+      "detail": "providerkey=140269 (JAMES HALSTEAD PLC): identical REVENUE 0.0000e+00 in years 2019 and 2022 (possible copy error)",
+      "affected_rows": [
+        170,
+        173
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "exact_revenue_repeat_non_adjacent",
+      "detail": "providerkey=ABFRL.NS (Aditya Birla Fashion and Retail Limited): identical REVENUE 5.2128e+10 in years 2020 and 2022 (possible copy error)",
+      "affected_rows": [
+        334,
+        332
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "exact_revenue_repeat_non_adjacent",
+      "detail": "providerkey=ABFRL.NS (Aditya Birla Fashion and Retail Limited): identical REVENUE 8.0931e+10 in years 2021 and 2023 (possible copy error)",
+      "affected_rows": [
+        333,
+        331
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Consistency",
+      "check": "exact_revenue_repeat_non_adjacent",
+      "detail": "providerkey=DK0010263722 (AGF AS): identical REVENUE 7.0076e+09 in years 2021 and 2024 (possible copy error)",
+      "affected_rows": [
+        235,
+        238
+      ]
+    },
+    {
+      "severity": "HARD_REJECT",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_likely_error",
+      "detail": "[LLM | LIKELY_ERROR | confidence=HIGH] Aditya Birla Fashion and Retail Limited (pk=ABFRL.NS): The identical revenue figures in 2020 and 2022, as well as in 2021 and 2023, suggest a potential data extraction error rather than a plausible business event. \u2192 Reject and re-extract",
+      "affected_rows": [
+        331,
+        332,
+        333,
+        334
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] JAMES HALSTEAD PLC (pk=140269): The zero revenue in 2019 and 2022 for an active public company raises concerns about data accuracy, especially with a 100% drop in revenue from 2021 to 2022. \u2192 Flag for manual review",
+      "affected_rows": [
+        170,
+        171,
+        172,
+        173,
+        174
+      ]
+    },
+    {
+      "severity": "HARD_REJECT",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_likely_error",
+      "detail": "[LLM | LIKELY_ERROR | confidence=HIGH] Twentyfirst Century Management Services Limited (pk=21STCENMGM.NS): The negative revenue in 2022 is implausible for a company and indicates a likely data entry error. \u2192 Reject and re-extract",
+      "affected_rows": [
+        243,
+        244,
+        245,
+        246
+      ]
+    },
+    {
+      "severity": "HARD_REJECT",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_likely_error",
+      "detail": "[LLM | LIKELY_ERROR | confidence=HIGH] PZ CUSSONS PLC (pk=19457): The identical revenue in 2019 and 2023 after a decline suggests a potential data extraction issue rather than a genuine business event. \u2192 Reject and re-extract",
+      "affected_rows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=MEDIUM] NEWBURY RACECOURSE PLC (pk=80774): The missing revenue for 2022 and 2023, combined with a significant drop in 2020, raises concerns about data integrity. \u2192 Flag for manual review",
+      "affected_rows": [
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=MEDIUM] CAFFYNS PUBLIC LIMITED COMPANY (pk=105664): The missing revenue for 2019 and 2023, along with a drastic drop in 2021, suggests potential data issues. \u2192 Flag for manual review",
+      "affected_rows": [
+        125,
+        126,
+        127,
+        128,
+        129
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] 63 moons technologies limited (pk=63MOONS.NS): The revenue growth year-on-year is consistent and plausible, indicating a healthy business performance. \u2192 Accept",
+      "affected_rows": [
+        259,
+        260,
+        261,
+        262
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=MEDIUM] Aarti Pharmalabs Limited (pk=AARTIPHARM.NS): The significant drop in revenue from 2020 to 2021 followed by a recovery raises questions about data accuracy. \u2192 Flag for manual review",
+      "affected_rows": [
+        295,
+        296,
+        297,
+        298
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=MEDIUM] Aarvee Denims and Exports Ltd. (pk=AARVEEDEN.NS): The drastic drop in revenue from 2022 to 2023 is concerning and may indicate a data quality issue. \u2192 Flag for manual review",
+      "affected_rows": [
+        303,
+        304,
+        305,
+        306
+      ]
+    },
+    {
+      "severity": "HARD_REJECT",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_likely_error",
+      "detail": "[LLM | LIKELY_ERROR | confidence=HIGH] AGF AS (pk=DK0010263722): The identical revenue in 2021 and 2024 suggests a potential data extraction error. \u2192 Reject and re-extract",
+      "affected_rows": [
+        234,
+        235,
+        236,
+        237,
+        238
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] THE HENDERSON SMALLER COMPANIES INVESTMENT TRUST PLC (pk=25526): The missing revenue for 2020 and 2021 is plausible for an investment trust, and the growth in 2023 is reasonable. \u2192 Accept",
+      "affected_rows": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] YOUNG & CO'S BREWERY PLC (pk=32762): The missing revenue for 2019 and 2021, along with a significant increase in 2022, raises concerns about data integrity. \u2192 Flag for manual review",
+      "affected_rows": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] LEEDS GROUP PLC (pk=67863): The drastic drop in revenue from 2021 to 2022 is implausible and suggests a potential data quality issue. \u2192 Flag for manual review",
+      "affected_rows": [
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] REACH PLC (pk=82548): The 91% drop in revenue from 2022 to 2023 is highly suspicious, especially with missing data for prior years. \u2192 Flag for manual review",
+      "affected_rows": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] MPAC GROUP PLC (pk=124855): The 884% increase in revenue over a 3-year gap is implausible and suggests a data quality issue. \u2192 Flag for manual review",
+      "affected_rows": [
+        155,
+        156,
+        157,
+        158,
+        159
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_suspicious",
+      "detail": "[LLM | SUSPICIOUS | confidence=HIGH] Andhra Cements Limited (pk=ACL.NS): The massive increase in revenue from 2020 to 2023 is highly suspicious and likely indicates a data extraction error. \u2192 Flag for manual review",
+      "affected_rows": [
+        364,
+        365,
+        366,
+        367
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] JAMES LATHAM PUBLIC LIMITED COMPANY (pk=65619): The revenue growth is consistent and plausible, indicating a healthy business performance. \u2192 Accept",
+      "affected_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] AAA Technologies Limited (pk=AAATECH.NS): The revenue growth year-on-year is consistent and plausible, indicating a healthy business performance. \u2192 Accept",
+      "affected_rows": [
+        267,
+        268,
+        269,
+        270
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] Aaron Industries Limited (pk=AARON.NS): The revenue growth is consistent and plausible, indicating a healthy business performance. \u2192 Accept",
+      "affected_rows": [
+        279,
+        280,
+        281,
+        282
+      ]
+    },
+    {
+      "severity": "SOFT_FLAG",
+      "dimension": "Plausibility",
+      "check": "llm_verdict_plausible",
+      "detail": "[LLM | PLAUSIBLE | confidence=HIGH] Aartech Solonics Limited (pk=AARTECH.NS): The revenue growth year-on-year is consistent and plausible, indicating a healthy business performance. \u2192 Accept",
+      "affected_rows": [
+        283,
+        284,
+        285,
+        286
+      ]
+    }
+  ]
+}
