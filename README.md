@@ -2,7 +2,7 @@
 
 ---
 
-## 📊 Financial Data Quality Framework
+## Financial Data Quality Framework
 
 An automated data quality pipeline for validating company financial revenue data extracted from multiple sources.
 This project combines rule-based validation and LLM-powered anomaly detection to identify errors, inconsistencies, and plausibility risks before data ingestion.
@@ -23,9 +23,9 @@ The system runs 5 dimensions of quality checks, flags problematic records, and g
 
 ---
 
-## ⚙️ Features
+##  Features
 
-### ✅ Automated Validation
+### Automated Validation
 
 * Completeness
 * Validity
@@ -33,19 +33,19 @@ The system runs 5 dimensions of quality checks, flags problematic records, and g
 * Uniqueness
 * LLM-based Plausibility
 
-### 🧠 Hybrid Approach
+### Hybrid Approach
 
 * Rule-based checks for structured validation
 * Optional LLM reasoning for contextual anomaly detection
 
-### 📈 Interactive UI
+### Interactive UI
 
 * Built with Streamlit
 * Configurable thresholds
 * Upload and validate datasets
 * Visual inspection of flagged records
 
-### 📂 Multiple Output Formats
+### Multiple Output Formats
 
 * Flagged dataset
 * JSON quality report
@@ -53,7 +53,7 @@ The system runs 5 dimensions of quality checks, flags problematic records, and g
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The pipeline follows a modular structure:
 
@@ -78,7 +78,7 @@ Each dimension produces structured issues with:
 
 ---
 
-## 🔍 Quality Checks
+##  Quality Checks
 
 ### 1. Completeness
 
@@ -118,7 +118,7 @@ Uses a language model to:
 
 ---
 
-## 🧾 Severity Levels
+##  Severity Levels
 
 | Level       | Description                          |
 | ----------- | ------------------------------------ |
@@ -127,7 +127,7 @@ Uses a language model to:
 
 ---
 
-## 🖥️ Streamlit App
+##  Streamlit App
 
 The project includes an interactive UI where users can:
 
@@ -139,7 +139,7 @@ The project includes an interactive UI where users can:
 * Download structured outputs
 
 ---
-## 📥 Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -184,7 +184,7 @@ If no key is provided, the system will skip this step.
 
 ---
 
-## 📂 Input Requirements
+##  Input Requirements
 
 Supported formats:
 
