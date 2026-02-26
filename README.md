@@ -9,7 +9,7 @@ This project combines rule-based validation and LLM-powered anomaly detection to
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Financial datasets from APIs, scrapers, or multiple providers often contain:
 
@@ -164,7 +164,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
+## Run the Application
 
 ```bash
 streamlit run app.py
@@ -172,7 +172,7 @@ streamlit run app.py
 
 ---
 
-## 🔑 Optional LLM Setup
+## Optional LLM Setup
 
 To enable the plausibility check:
 
@@ -209,7 +209,7 @@ unit_REVENUE
 
 ---
 
-## 📤 Outputs
+## Outputs
 
 The framework generates:
 
